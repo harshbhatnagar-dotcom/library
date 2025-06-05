@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Library Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">📚 Admin Dashboard</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <a href="{% url 'add_student' %}" class="btn btn-outline-primary w-100 py-3 fs-5">
+        👨‍🎓 Add Student
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'add_teacher' %}" class="btn btn-outline-success w-100 py-3 fs-5">
+        👩‍🏫 Add Teacher
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'add_book' %}" class="btn btn-outline-warning w-100 py-3 fs-5">
+        📖 Add Book
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'add_issued_book' %}" class="btn btn-outline-danger w-100 py-3 fs-5">
+        📦 Issue Book
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'add_homeimage' %}" class="btn btn-outline-info w-100 py-3 fs-5">
+        🖼️ Add Home Image
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'add_ejournal' %}" class="btn btn-outline-info w-100 py-3 fs-5">
+        Add e-jounrals
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Library Management System</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
