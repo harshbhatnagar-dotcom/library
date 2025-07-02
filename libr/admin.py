@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import homeimage,Book,Student,Teacher,IssuedBook,EJournal‎
+from . models import homeimage,Book,Student,Teacher,IssuedBook,EJournal
 
 admin.site.register(homeimage)
 admin.site.register(Book)
